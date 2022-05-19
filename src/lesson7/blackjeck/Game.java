@@ -3,7 +3,7 @@ package lesson7.blackjeck;
 import java.util.ArrayList;
 
 public class Game implements IGame {
-    private ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<Player> players= new ArrayList<>();
     private Coloda coloda = new Coloda();
 
     @Override

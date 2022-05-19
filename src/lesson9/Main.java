@@ -15,5 +15,31 @@ public class Main {
 
         IMatrix matrixAdd = matrix1.add(matrix2);
         matrixAdd.printToConsole();
+
+        IMatrix matrixSub = matrix1.sub(matrix2);
+        matrixSub.printToConsole();
+
+        IMatrix matrixMul = matrix1.mul(matrix2);
+        matrixMul.printToConsole();
+
+        IMatrix matrix1Mul = matrix1.mul(5);
+        matrix1Mul.printToConsole();
+
+        IMatrix matrix1Transpose = matrix1.transpose();
+        matrix1Transpose.printToConsole();
+
+        IMatrix matrix1fillMatrix = matrix1.fillMatrix(5);
+        matrix1fillMatrix.printToConsole();
+
+        boolean matrix1isNullMatrix = matrix1.isNullMatrix();
+        System.out.println(matrix1.isNullMatrix());
+
+        boolean matrix1isIdentityMatrix = matrix1.isIdentityMatrix();
+        System.out.println(matrix1.isIdentityMatrix());
+
+        boolean matrix1isSquareMatrix = matrix1.isSquareMatrix();
+        System.out.println(matrix1.isSquareMatrix());
+
+
     }
 }

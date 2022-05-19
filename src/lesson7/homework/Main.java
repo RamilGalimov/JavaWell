@@ -20,6 +20,5 @@ public class Main<bludo1> {
         menu.setName("Горячие закуски");
         menu.containsBludo(bludo1);
         menu.containsBludo(bludo2);
-
     }
 }
