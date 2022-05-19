@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.Set;
 
 public class CollectionUtilsImpl implements CollectionUtils {
+
+
     @Override
     public Collection<Integer> union(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
         LinkedList<Integer> result = new LinkedList<>();
@@ -33,12 +35,8 @@ public class CollectionUtilsImpl implements CollectionUtils {
     @Override
     public Set<Integer> unionWithoutDuplicate(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
         HashSet<Integer> result = new HashSet<>();
-        for (Integer in : a) {
-            if (!b.contains(in)) {
-                result.addAll(a);
-                result.addAll(b);
-            }
-        }
+        result.addAll(a);
+        result.addAll(b);
         return result;
     }
 
@@ -48,6 +46,11 @@ public class CollectionUtilsImpl implements CollectionUtils {
         for (Integer i : a) {
             if (b.contains(i)) {
                 result.add(i);
+            }
+        }
+        for (Integer j : b) {
+            if (a.contains(j)) {
+                result.add(j);
             }
         }
         return result;

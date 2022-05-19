@@ -18,7 +18,7 @@ public class Main3 {
         b.add(9);
 
         CollectionUtilsImpl utils = new CollectionUtilsImpl();
-        Collection<Integer> intersection = utils.intersection(a, b);
-        System.out.println(intersection);
+        Collection<Integer> difference = utils.difference(a, b);
+        System.out.println(difference);
     }
 }
